@@ -1,0 +1,88 @@
+
+/* Typography */
+/* Import fonts locally wnen google font is not availabe */
+@font-face {
+    font-family: 'Regular Sans Pro';
+    src: url('./fonts/source-sans-pro.regular.ttf');
+    font-weight: normal;
+};
+@font-face {
+    font-family: 'Bold Sans Pro';
+    src: url('./fonts/source-sans-pro.bold.ttf');
+    font-weight: bold;
+};
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Regular Sans Pro', sans-serif;
+    font-size: 12px;
+}
+
+#logo{
+    width: 127px;
+    height: 50px;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+.header-container {
+    padding: 20px;
+    display: flex;
+    gap: 60%;
+    border-bottom: 1px solid #C6C6C6;
+}
+.post-container{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 15px;
+}
+.post-info p{
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.post-info-container,
+.icon-container,
+.content-container
+{
+    padding-left: 10px;
+}
+.content-container .bold-text{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 3px;
+}
+.post-info-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-image{
+    width: 375px;
+    height: 375px;
+}
+.icon-container img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.icon-container img:hover,
+.post-image:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.bold-text{
+    font-family: 'Bold Sans Pro';
+    font-size: 13px;
+    font-weight: 700;
+}
